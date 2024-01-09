@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Bella Hinz</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Import the webpage's javascript file -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        height: 100%;
+        background-color: #a3b18a;
+        scroll-behavior: smooth;
+      }
+
+      .overallcontainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+
+      .container {
+        position: relative;
+        width: 50%;
+      }
+
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 5px;
+      }
+      .vertical {
+        display: block;
+        width: 100%;
+        height: 57%;
+        padding: 5px;
+      }
+      .verticaloverlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 57%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: #588157;
+        padding: 5px;
+        border-radius: 8px;
+      }
+      .container:hover .verticaloverlay {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: #588157;
+        padding: 5px;
+        border-radius: 8px;
+      }
+
+      .container:hover .overlay {
+        opacity: 1;
+      }
+
+      .text {
+        color: #dad7cd;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+      button{
+        font-size: 18px;
+        border-radius: 8px;
+        border: none;
+        padding: 10px 24px;
+        margin: 5px;
+        background-color: #457b9d;
+        transition-duration: 0.4s;
+        color: white;
+        width: 40%;
+        font-family:'Barlow';
+        
+      }
+      button:hover {
+        background-color: #1e88e5; 
+        color: white;
+      }
+      button a{
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <!--Just in case you need a dropdown
+      <div class="dropdown">
+        <button class="dropbtn">
+          Contact
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="mailto:tbialek@lhs210.net ">Mrs. Bialek</a>
+          <a href="mailto:phelajul000@s.lhs210.net">Julia P</a>
+          <a href="mailto:nispeisa000@s.lhs210.net">Bella N</a>
+        </div>
+      </div>
+      -->
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About & Contact</a>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="overallcontainer">
+        <div class="container">
+            <img
+              src="images/murder.JPG"
+              alt="Avatar"
+              class="image"
+            />
+            <div class="overlay">
+              <div class="text">Murder Can be Habit Forming by Billy St. John (2023)</div>
+            </div>
+        </div>
+      <div class="container">
+        <img
+          src="images/newsies1.JPG"
+          alt="Avatar"
+          class="image"
+        />
+        <div class="overlay">
+          <div class="text">Disney's Newsies (2022)</div>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="images/newsies2.JPG"
+          alt="Avatar"
+          class="image"
+        />
+        <div class="overlay">
+          <div class="text">Disney's Newsies (2022)</div>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="images/newsies3.JPG"
+          alt="Avatar"
+          class="image"
+        />
+        <div class="overlay">
+          <div class="text">Disney's Newsies (2022)</div>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="images/radium.JPG"
+          alt="Avatar"
+          class="image"
+        />
+        <div class="overlay">
+          <div class="text">Radium Girls by D.W Gregory (2022)</div>
+        </div>
+      </div>
+      <div class="container">
+        <img
+          src="images/wonderfullife.JPG"
+          alt="Avatar"
+          class="image"
+        />
+        <div class="overlay">
+          <div class="text">It's a Wonderful Life Radio Play by Joe Landry (2021)</div>
+        </div>
+      </div>
+      <div class="container">
+        <img class="vertical"
+          src="images/addams2.JPG"
+          alt="Avatar"
+          class="image"
+        />
+        <div class="verticaloverlay">
+          <div class="text">The Addams Family
+            Musical by Marshall Brickman and Rick Elice (2023)</div>
+        </div>
+    </div>
+    <div class="container">
+        <img class="vertical"
+          src="images/addams.JPG"
+          alt="Avatar"
+          class="image"
+        />
+        <div class="verticaloverlay">
+          <div class="text">The Addams Family
+            Musical by Marshall Brickman and Rick Elice (2023)</div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
